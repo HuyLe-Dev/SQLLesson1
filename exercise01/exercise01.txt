@@ -1,0 +1,5 @@
+1) Viết câu lệnh T-SQL để chọn tất cả các cột từ bảng “Books” 
+SELECT * FROM Books
+
+2)Viết câu lệnh T-SQL để chọn tên sách và tác giả của những cuốn sách có giá lớn hơn 50
+SELECT title, author FROM Books WHERE price > 50

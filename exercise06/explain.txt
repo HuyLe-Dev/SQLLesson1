@@ -1,0 +1,7 @@
+Truy vấn tìm sự kiện mà một khách mời tham dự: 
+Chọn từ bảng EventAttendee với điều kiện MaKhachMoi bằng với mã khách mời cần tìm, 
+sau đó su dung JOIN với bảng Event để lấy thông tin chi tiết về sự kiện.
+
+Truy vấn tìm nhà tài trợ của một sự kiện cụ thể: 
+Chọn từ bảng EventSponsor với điều kiện MaSuKien　bằng với mã sự kiện cần tìm, 
+sau đó su dung JOIN với bảng Sponsor để lấy thông tin chi tiết về nhà tài trợ.
