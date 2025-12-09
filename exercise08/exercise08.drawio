@@ -1,0 +1,92 @@
+<mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <mxCell id="emp" value="Employee" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#dae8fc;strokeColor=#6c8ebf;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="40" width="200" height="104" as="geometry" />
+    </mxCell>
+    <mxCell id="e_id" value="Mã nhân viên (PK)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=1" vertex="1" parent="emp">
+      <mxGeometry y="26" width="200" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="e_name" value="Tên nhân viên" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="emp">
+      <mxGeometry y="52" width="200" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="e_role" value="Chức vụ" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="emp">
+      <mxGeometry y="78" width="200" height="26" as="geometry" />
+    </mxCell>
+
+    <mxCell id="assign" value="Assignment" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#ffe6cc;strokeColor=#d79b00;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;" vertex="1" parent="1">
+      <mxGeometry x="320" y="40" width="210" height="156" as="geometry" />
+    </mxCell>
+    <mxCell id="a_id" value="Mã phân công (PK)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=1" vertex="1" parent="assign">
+      <mxGeometry y="26" width="210" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="a_eid" value="Mã nhân viên (FK)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=2" vertex="1" parent="assign">
+      <mxGeometry y="52" width="210" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="a_pid" value="Mã dự án (FK)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=2" vertex="1" parent="assign">
+      <mxGeometry y="78" width="210" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="a_start" value="Ngày bắt đầu" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="assign">
+      <mxGeometry y="104" width="210" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="a_end" value="Ngày kết thúc" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="assign">
+      <mxGeometry y="130" width="210" height="26" as="geometry" />
+    </mxCell>
+
+    <mxCell id="proj" value="Project" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#d5e8d4;strokeColor=#82b366;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;" vertex="1" parent="1">
+      <mxGeometry x="600" y="40" width="200" height="156" as="geometry" />
+    </mxCell>
+    <mxCell id="p_id" value="Mã dự án (PK)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=1" vertex="1" parent="proj">
+      <mxGeometry y="26" width="200" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="p_name" value="Tên dự án" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="proj">
+      <mxGeometry y="52" width="200" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="p_start" value="Ngày bắt đầu" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="proj">
+      <mxGeometry y="78" width="200" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="p_end" value="Ngày kết thúc" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="proj">
+      <mxGeometry y="104" width="200" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="p_budget" value="Ngân sách" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="proj">
+      <mxGeometry y="130" width="200" height="26" as="geometry" />
+    </mxCell>
+
+    <mxCell id="task" value="Task" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#f8cecc;strokeColor=#b85450;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;" vertex="1" parent="1">
+      <mxGeometry x="600" y="300" width="200" height="182" as="geometry" />
+    </mxCell>
+    <mxCell id="t_id" value="Mã nhiệm vụ (PK)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=1" vertex="1" parent="task">
+      <mxGeometry y="26" width="200" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="t_pid" value="Mã dự án (FK)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=2" vertex="1" parent="task">
+      <mxGeometry y="52" width="200" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="t_name" value="Tên nhiệm vụ" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="task">
+      <mxGeometry y="78" width="200" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="t_start" value="Ngày bắt đầu" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="task">
+      <mxGeometry y="104" width="200" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="t_end" value="Ngày kết thúc" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="task">
+      <mxGeometry y="130" width="200" height="26" as="geometry" />
+    </mxCell>
+    <mxCell id="t_stat" value="Trạng thái" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="task">
+      <mxGeometry y="156" width="200" height="26" as="geometry" />
+    </mxCell>
+
+    <mxCell id="link_emp_assign" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERmany;startArrow=ERone;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="emp" target="assign">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <mxCell id="link_proj_assign" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERmany;startArrow=ERone;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="proj" target="assign">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <mxCell id="link_proj_task" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERmany;startArrow=ERone;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="proj" target="task">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+  </root>
+</mxGraphModel>
